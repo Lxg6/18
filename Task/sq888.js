@@ -33,12 +33,13 @@ async function all() {
     await jsdailysign();
 
     await $.wait(1000);
-    await jsshucheng();
-    
     await jsvedioreward20();
+
     await $.wait(1000);
     await jsvedioreward10();
+
     await $.wait(1000);
+    await jsshucheng();
 
     await $.wait(1000);
     await jsshare();
