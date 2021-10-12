@@ -24,5 +24,5 @@ jobs:
         run: |
           node Task/txwzq.js
         env:
-          txwzqVal: ${{ secrets.txwzqVal }}
-          txzxgVal: ${{ secrets.txzxgVal }}
+          txwzq_txwzqck: ${{ secrets.txwzq_txwzqck }}
+          txzxg_txzxgck: ${{ secrets.txzxg_txzxgck }}
