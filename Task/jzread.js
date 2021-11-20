@@ -1,33 +1,16 @@
 
 /*
-微信公众号柠檬玩机交流
-下载地址：
-APP商店 九章头条
+九章头条
 
-使用方法
-获取数据打开APP即可获取
-一天预算2块的样子 
-邀请的别邀请多了容易封号
-========青龙===========
-ql raw http://nm66.top/jzread.js
 变量为jzreadurl多账号用@隔开
 export jzreadurl='https://api.st615.com/v1/user/info?token=抓包的token'
 自行抓包替换 关键字为token 抓包的token
 提现变量为cashtx
 面额为0.3 2 5 30 50 100
 新账号提现改为export cashtx='0.3'
-
-========isQuanX=========
-[rewrite_local]
-https://api.st615.com/v1/user/info\?token=\S+ url script-request-header http://nm66.top/jzread.js
-
-hostname = api.st615.com
 */
 
-// [task_local]
-// */60 * * * * http://nm66.top/jzread.js, tag=柠檬九章头条, img-url=circles.hexagongrid.fill.system, enabled=true
-
-const $ = new Env('柠檬九章头条');
+const $ = new Env('九章头条');
 let status;
 status = (status = ($.getval("jzreadstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
 let jzreadurlArr = [],jzreadcount = ''
