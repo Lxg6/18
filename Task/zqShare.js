@@ -1,4 +1,4 @@
-const $ = new Env("助力5次");
+const $ = new Env("zq助力");
 Share();
 
 //https://script.baertt.com/count2/callback  抓这个链接 填写到下面url里
@@ -7,7 +7,7 @@ async function Share() {
 
 
 
-      var url = "https://script.baertt.com/count2/callback?si="
+      var url = "https://script.baertt.com/count2/callback?si=cd010d930ce54a7530190757681a1f14&referer=https%253A%252F%252Ffocus.youth.cn%252Farticle%252Fs%253Fsignature%253DgENjGxJw2L6opAMamvEdOWCGNQxcOrKRZP1nX3kY58KdmBzRO9%2526uid%253D3438351%2526phone_code%253D59dd60aa288c34c8b81364b7803b4d61%2526scid%253D40930711%2526time%253D1637758444%2526app_version%253D2.0.0%2526sign%253Dc70f8f56b88a074136cd7435e481ee78&_=1637758462757&jsonpcallback=jsonp6"
 
 
 
@@ -17,7 +17,7 @@ async function Share() {
 
       var s_si = url.match(/si=(.*?)&/)[1];
       $.log("数据获取成功");
-      for(let i=1;i<50;i++){
+      for(let i=1;i<6;i++){
         await postShareInfoa(url,s_si, i)
       }
     } catch (error) {
