@@ -1,4 +1,4 @@
-const $ = new Env("zq助力");
+const $ = new Env("助力5次");
 Share();
 
 //https://script.baertt.com/count2/callback  抓这个链接 填写到下面url里
