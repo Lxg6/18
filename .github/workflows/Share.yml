@@ -22,4 +22,4 @@ jobs:
           npm install
       - name: '运行【中青分享】'     
         run: |
-          node Task/zqShare.js
+          node Share.js
