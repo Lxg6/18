@@ -23,3 +23,6 @@ jobs:
       - name: '运行【中青看看赚】'     
         run: |
           node Task/zqkkz.js
+        env:
+          zq_cookie: ${{ secrets.zq_cookie }}
+          zqlookStartbody: ${{ secrets.zqlookStartbody }}
